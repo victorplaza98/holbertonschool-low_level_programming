@@ -22,7 +22,7 @@ int main(void)
 
 			if (num1 == 9 && num2 == 9)
 				continue;
-			
+
 			putchar(',');
 			putchar(' ');
 		}
