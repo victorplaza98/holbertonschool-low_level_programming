@@ -11,11 +11,8 @@
  */
 int main(void)
 {
-	char betty;
-
-	for (betty = 'z'; betty >= 'a'; betty--)
-		putchar(betty);
-
+	for (int i = 'z'; i >= 'a'; i--)
+		putchar(i);
 	putchar("\n");
 
 	return (0);
