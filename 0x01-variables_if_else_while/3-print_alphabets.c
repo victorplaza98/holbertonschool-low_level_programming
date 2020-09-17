@@ -12,6 +12,8 @@
 int main(void)
 {
 	char betty;
+	for (betty = 'a'; betty <= 'z'; betty++)
+		putchar(betty);
 
 	for (betty = 'A'; betty <= 'Z'; betty++)
 		putchar(betty);
