@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _islower - check if arg is lowercase
- *
+ * @c: Character
  *
  * Return: 0
  */
