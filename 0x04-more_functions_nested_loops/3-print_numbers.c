@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_numbers - 
+ * print_numbers - print
  *
  * Return: void
  */
