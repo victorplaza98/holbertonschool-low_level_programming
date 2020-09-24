@@ -1,4 +1,4 @@
-nclude "holberton.h"
+#include "holberton.h"
 
 /**
  * print_diagonal - prints diagonal line
@@ -6,7 +6,6 @@ nclude "holberton.h"
  *
  * Return: void
  */
-
 
 void print_diagonal(int n)
 {
