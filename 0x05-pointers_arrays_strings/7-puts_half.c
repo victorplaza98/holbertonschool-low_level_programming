@@ -1,4 +1,4 @@
-nclude "holberton.h"
+#include "holberton.h"
 /**
  * puts_half - Second half of a string
  * @str: string to print half
