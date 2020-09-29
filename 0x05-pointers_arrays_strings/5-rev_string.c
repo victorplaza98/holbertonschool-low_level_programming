@@ -1,9 +1,14 @@
 #include "holberton.h"
 #include <stdio.h>
-
+/**
+ * rev_string  - takes a pointer int
+ * @s: pointer s
+ * Description: Takes a pointer
+ * Return: return 0
+*/
 void rev_string(char *s)
 {
-	int x,y,z;
+	int x, y, z;
 	char c;
 
 	x = 0;
@@ -11,10 +16,10 @@ void rev_string(char *s)
 
 	while (s[x] != '\0')
 	{
-		x++;	
+		x++;
 	}
 	z = x / 2;
-	x = x -1;
+	x = x - 1;
 
 	while (x >= z)
 	{
