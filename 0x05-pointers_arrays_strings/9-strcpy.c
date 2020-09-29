@@ -1,23 +1,19 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * _strcpy - string
+ * _strcpy - given string
  * @dest: array
  * @src: size of array
  * Return: 1
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i, j;
+	int i = 0;
 
-	i = 0;
-	while (src[i] != '\n')
+	while (*(src + i) != 0)
 	{
-		j++;
-	}
-	for (j = 0; j <= i; j++)
-	{
-		dest[j] = *(src + j);
+		*(dest + i) = *(src + i);
+		i++;
 	}
 	return (dest);
 }
