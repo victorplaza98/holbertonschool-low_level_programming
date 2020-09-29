@@ -6,24 +6,28 @@ nclude "holberton.h"
  */
 void puts_half(char *str)
 {
-	int i, n;
+	int i, j;
 
-	i = n = 0;
-	while (*(str + i) != 0)
+	i = 0;
+	j = 0;
+	while (str[i] != '\0')
 	{
 		i++;
 	}
 	if (i % 2 == 0)
-		i /= 2;
+	{
+		j = i / 2;
+	}
 	else
 	{
-		n = (i - 1) / 2;
-		i -= n;
+		j = (i - 1) / 2;
+		j = j + 1;
 	}
-	while (*(str + i) != 0)
+	i = i - 1;
+	while (j <= i)
 	{
-		_putchar(*(str + i));
-		i++;
+		_putchar(str[j]);
+		j++;
 	}
 	_putchar('\n');
 }
