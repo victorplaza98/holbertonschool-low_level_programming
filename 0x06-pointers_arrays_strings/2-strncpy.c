@@ -2,7 +2,7 @@
 /**
  * _strncpy - string with n bytes
  * @dest: copy the src
- * @src: String 
+ * @src: String
  * @n: number of bytes
  * Return: dest
  */
