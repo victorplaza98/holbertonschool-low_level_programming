@@ -37,3 +37,8 @@ char *string_toupper(char *s);
 #define CAP_STRING_H
 char *cap_string(char *s);
 #endif
+
+#ifndef LEET_H
+#define LEET_H
+char *leet(char *s);
+#endif
