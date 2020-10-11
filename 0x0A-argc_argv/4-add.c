@@ -9,19 +9,31 @@
  */
 int main(int argc, char *argv[])
 {
+	int posit;
 	int count;
-	long posit;
+	int i;
 
-	for (count = 1, posit = 0; count < argc; count++)
+	count = 1;
+	posit = 0;
+	if (argc == 1)
 	{
-		if (*argv[count] == 0 || atoi(argv[count]) <= 0)
+		printf("0\n");
+		return (0);
+	}
+	while (count < argc)
+	{
+		for (i = 0; argv[count][i] != '\0'; i++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!(isdigit(argv[count][i])))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		posit += atoi(argv[count]);
+		count++;
 	}
+	printf("%d\n", posit);
 
-	printf("%ld\n", posit);
 	return (0);
 }
