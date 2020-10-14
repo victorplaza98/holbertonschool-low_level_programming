@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * free_grid - 2 dimensional grid
- * @grid: Array
+ * free_grid - Free a 2 dimensional grid previously created
+ * by alloc_grid function.
+ * @grid: Array of arrays of integer numbers.
  * @height: rows.
- * Return: void.
  */
 void free_grid(int **grid, int height)
 {
@@ -15,6 +15,5 @@ void free_grid(int **grid, int height)
 	{
 		free(grid[i]);
 	}
-	free(grid[i]);
+	free(grid);
 }
-
