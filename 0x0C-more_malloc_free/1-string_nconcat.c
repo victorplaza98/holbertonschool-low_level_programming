@@ -1,7 +1,13 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * string_nconcat - function that concatenates two strings
+ *@s1: string
+ *@s2: string
+ *@n: is greater or equal to the length of s2 then use the entire string s2
+ *Return: the string
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *c;
