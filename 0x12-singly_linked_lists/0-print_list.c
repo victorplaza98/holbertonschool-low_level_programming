@@ -6,16 +6,23 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t nodes = 0;
+	unsigned int cont = 0;
 
-	for (nodes = 0; h != NULL; nodes++)
+	if (h)
 	{
-		if (h->str == NULL)
-			printf("[0] (nil)\n");
-		else
-			printf("[%d] %s\n", h->len, h->str);
-
-		h = h->next;
+		while (h != NULL)
+		{
+			if (h[0].str != NULL)
+			{
+				printf("[%d] %s\n", h[0].len, h[0].str);
+			}
+			else
+			{
+				printf("[0] (nil)\n");
+			}
+			h = h[0].next;
+			cont++;
+		}
 	}
-	return (nodes);
+	return (cont);
 }
