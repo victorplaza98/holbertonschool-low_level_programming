@@ -27,4 +27,3 @@ int main(void)
     free_listint2(&head);
     return (0);
 }
-julien@ubuntu:~/c0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra 8-main.c 3-add_nodeint_end.c 5-free_listint2.c 8-sum_listint.c -o i
