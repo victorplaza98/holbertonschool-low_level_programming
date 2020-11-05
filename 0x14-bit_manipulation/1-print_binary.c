@@ -1,5 +1,11 @@
 #include "holberton.h"
 
+/**
+ * print_binary - function that prints the binary
+ * representation of a number
+ * @n: Value decimal to
+ * Return: void
+ */
 void print_binary(unsigned long int n)
 {
 	char teamf;
