@@ -7,18 +7,18 @@
  * @value: value to search
  * Return:  first index where value is located
  */
-int linear_searchs(int *array, size_t size, int value)
+int linear_search(int *array, size_t size, int value)
 {
 	size_t i;
-	int temp;
+	int tmp;
 
 	if (array != NULL)
 	{
 		for (i = 0; i < size; i++)
 		{
-			temp = array[i];
-			printf("Value checked array[%lu] = [%d]\n", i, temp);
-			if (temp == value)
+			tmp = array[i];
+			printf("Value checked array[%lu] = [%d]\n", i, tmp);
+			if (tmp == value)
 				return (i);
 		}
 	}
